@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TV Series</title>
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+  />
+  <style>
+    .header-bar {
+      background-color: #17a2b8;
+      color: white;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+    }
+
+    .header-bar img {
+      height: 40px;
+      margin-right: 10px;
+    }
+
+    .table td a {
+      color: #0056b3;
+      text-decoration: none;
+    }
+
+    .table td a:hover {
+      text-decoration: underline;
+    }
+
+    .card {
+      margin-top: 0;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+    }
+
+    #series-detail-card {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="header-bar">
+    <img src="https://us.123rf.com/450wm/sanek13744/sanek137441703/sanek13744170300223/73962749-ilustraci%C3%B3n-de-vector-de-icono-de-tv-en-estilo-plano-aislado-sobre-fondo-naranja-con-una-larga.jpg" alt="TV Logo" />
+    <h4 class="mb-0">TV Series</h4>
+  </div>
+
+  <div class="container mt-4">
+    <div class="row">
+
+      <div class="col-md-8">
+        <table class="table table-striped">
+          <thead class="thead-light">
+            <tr>
+              <th>#</th>
+              <th>Name</th>
+              <th>Channel</th>
+              <th>Seasons</th>
+            </tr>
+          </thead>
+          <tbody id="series">
+          
+          </tbody>
+        </table>
+        <p id="average-seasons" class="font-weight-bold"></p>
+      </div>
+
+      <div class="col-md-4">
+        <div id="series-detail-card" class="card">
+          <img id="series-img" class="card-img-top" src="" alt="Series image">
+          <div class="card-body">
+            <h5 id="series-title" class="card-title"></h5>
+            <p id="series-description" class="card-text"></p>
+            <a id="series-link" href="#" target="_blank" class="card-link"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="./scripts/main.js"></script>
+</body>
+</html>
